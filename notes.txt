@@ -1,0 +1,53 @@
+# TODO
+
+  * Ask Benjamin how long exactly (i.e. pauses)
+
+
+# Notes
+
+  * Talk + Exercise -> 4h (3h?)
+  *
+
+
+# Talk Outline
+
+## Part 1 -- Pyff
+
+  * Who am I?
+  * Overview: BCI System
+  * Pyff's Features
+  * Pyff Overview
+  * Feedback Controller
+  * Feedback Base Class
+  * GUI
+  * Control Signal / Interaction Signal
+  * XML Protocol
+  * Getting Pyff
+  * Volunteers are Welcome!
+  * Links
+
+## Part 2 -- Implementing a Pyff Application Step-by-Step
+
+  * Implementing a Pyff Application Step-by-Step
+  * A minimalistic yet working Pyff Application
+  * Something more useful
+  * Sending Triggers
+  * Using the logger
+  * Using PygameFeedback
+
+
+# Exercise
+
+We may need more than one exercise, to adapt to the various skill levels in
+Python.
+
+People should work in groups. We have groups of 20-25 people. Maybe five groups
+should do.
+
+  * Using Pyff
+  * Pong
+    * Against a wall or a AI. AI should give the user a chance to win.
+
+
+# vim: ts=2 sts=2 ft=markdown
+
