@@ -426,7 +426,14 @@ def pause_tick():
 \end{frame}
 
 \begin{frame}{Pygame Feedback Base Class}{Important methods and variables}
-
+    \begin{block}{Methods}
+        Inherited from Mainloop Feedback base class
+        \begin{description}
+            \item[play\_tick]
+            \item[pause\_tick]
+        \end{description}
+    \end{block}
+    \pause
     \begin{block}{Variables}
         \begin{description}[xxxxxxxxxxxxxx]
             \item[FPS] Frames per second
@@ -435,14 +442,6 @@ def pause_tick():
             \item[lastkey\_unicode] Last key pressed
         \end{description}
         ... and many more
-    \end{block}
-
-    \begin{block}{Methods}
-        Inherited from Mainloop Feedback base class
-        \begin{description}
-            \item[play\_tick]
-            \item[pause\_tick]
-        \end{description}
     \end{block}
 \end{frame}
 
