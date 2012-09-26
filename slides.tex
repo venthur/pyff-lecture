@@ -51,9 +51,6 @@
     \titlepage
 \end{frame}
 
-\part{Introduction to Pyff}
-
-\section{Introduction}
 \begin{frame}{Who am I?}
     \begin{itemize}
         \item PhD student at the Berlin Institute of Technology
@@ -73,6 +70,8 @@
 \begin{frame}{Outline}
     \tableofcontents[hidesubsections]
 \end{frame}
+
+\section{Introduction}
 \begin{frame}{Overview: BCI System}
     \includegraphics[width=\linewidth]{bci_system}
 \end{frame}
@@ -134,6 +133,7 @@
     \end{enumerate}
 \end{frame}
 
+\subsection{Data Flow}
 \begin{frame}{Data Flow}
     \includegraphics[width=\linewidth]{pyff_data_flow}
 \end{frame}
@@ -152,6 +152,7 @@
     \end{columns}
 \end{frame}
 
+\subsection{Feedback Controller}
 \begin{frame}{The Feedback Controller}
     \begin{itemize}
         \item The ``main program''
@@ -167,6 +168,7 @@
     \end{block}
 \end{frame}
 
+\subsection{GUI}
 \begin{frame}{The GUI}{Pyff's Graphical User Interface}
     \begin{columns}[T]
         \column{.5\textwidth}
@@ -180,6 +182,7 @@
    \end{columns}
 \end{frame}
 
+\subsection{Feedback Base Classes}
 \begin{frame}{Feedback Base Classes}
     At the top of the class hierarchy is \alert{Feedback.py}. It defines a set
     of methods the Feedback Controller relies on to communicate with every
@@ -212,6 +215,7 @@
     Feedbacks run in a \alert{different Process!}
 \end{frame}
 
+\subsection{XML Protocol}
 \begin{frame}{XML Protocol}
     You don't deal with it directly all serialization is done by Pyff.
     \begin{itemize}
@@ -248,6 +252,7 @@
 
 \section{Using Pyff}
 
+\subsection{Starting Pyff}
 \begin{frame}[fragile]{Starting Pyff}
     Starting Pyff...
     \vfill
@@ -274,6 +279,7 @@
     \end{block}
 \end{frame}
 
+\subsection{Using the GUI}
 \begin{frame}{Using the GUI}{Overview}
     \includegraphics[width=0.9\linewidth]{gui}
 \end{frame}
@@ -295,6 +301,7 @@
     \includegraphics[width=.9\linewidth]{gui}
 \end{frame}
 
+\subsection{Demo}
 \begin{frame}[plain]
     \begin{center}
         \huge{Demo}
@@ -303,6 +310,7 @@
 
 
 \section{Implementing a Pyff Application Step by Step}
+\subsection{Checklist}
 \begin{frame}[fragile]{Checklist for a New Feedback}
     \begin{enumerate}
         \item Write your Feedback and derive it from \alert{Feedback} or one of
@@ -332,7 +340,7 @@ foo.Foo
     \end{enumerate}
 \end{frame}
 
-
+\subsection{A Trivial Feedback}
 \begin{frame}[fragile]{A Trivial Feedback}
     \begin{lstlisting}
 import time
@@ -389,6 +397,7 @@ foo.Foo
     \end{exampleblock}
 \end{frame}
 
+\subsection{A Pygame Feedback}
 \begin{frame}[fragile, squeeze]{Anatomy of Game Like Applications}
     \begin{lstlisting}
 while True:     # <- Main Loop
