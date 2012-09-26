@@ -34,7 +34,7 @@ vertices is also filled with a color which changes over time.
 
 In the materials you'll find a directory `Relax` where a working yet incomplete
 Relax Feedback is implemented. Your task is to modify the `update_polygon`
-method in a way that the polygon moves and changes it color.
+method in a way that the polygon moves and changes its color.
 
 Please remember that the subject is supposed to relax, so try to avoid
 aggressive movements and color changes!
@@ -57,9 +57,9 @@ against a Computer. The subject uses left- and right hand imagination to
 control the paddle and plays against the computer which should keep the subject
 motivated by letting him win from time to time...
 
-Your Feedback should be implemented using [Pygame][Pygame], please use the
-Pygame base class. If you need some inspiration you can try to use the Relax
-Feedback from the previous exercise as a starting point.
+You can use the `Pong` provided in the materials directory as a starting point
+and modify it or you can start from scratch if you prefer.
+
 
 
 [Pong]: http://youtu.be/pDrRnJOCKZc
