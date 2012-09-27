@@ -310,35 +310,6 @@
 
 
 \section{Implementing a Pyff Application Step by Step}
-\subsection{Checklist}
-\begin{frame}[fragile]{Checklist for a New Feedback}
-    \begin{enumerate}
-        \item Write your Feedback and derive it from \alert{Feedback} or one of
-            its base classes
-            \begin{lstlisting}
-$ cat /tmp/foo/foo.py
-from FeedbackBase.Feedback import Feedback
-
-class Foo(Feedback):
-
-    def on_init(self):
-        print 'foo'
-            \end{lstlisting}
-        \pause
-        \item Write a \alert{feedbacks.list}
-            \begin{lstlisting}
-$ cat /tmp/foo/feedbacks.list
-foo.Foo
-            \end{lstlisting}
-        \pause
-        \item Start the Feedback Controller with the \alert{-a} parameter
-            pointing to the directory containing the \alert{feedbacks.list}
-            file
-            \begin{lstlisting}
-./FeedbackController.py -a /tmp/foo/
-            \end{lstlisting}
-    \end{enumerate}
-\end{frame}
 
 \subsection{A Trivial Feedback}
 \begin{frame}[fragile]{A Trivial Feedback}
@@ -495,6 +466,36 @@ def play_tick(self):
                          self.width, self.height])
     pygame.display.flip()
     \end{lstlisting}
+\end{frame}
+
+\subsection{Checklist}
+\begin{frame}[fragile]{Checklist for a New Feedback}
+    \begin{enumerate}
+        \item Write your Feedback and derive it from \alert{Feedback} or one of
+            its base classes
+            \begin{lstlisting}
+$ cat /tmp/foo/foo.py
+from FeedbackBase.Feedback import Feedback
+
+class Foo(Feedback):
+
+    def on_init(self):
+        print 'foo'
+            \end{lstlisting}
+        \pause
+        \item Write a \alert{feedbacks.list}
+            \begin{lstlisting}
+$ cat /tmp/foo/feedbacks.list
+foo.Foo
+            \end{lstlisting}
+        \pause
+        \item Start the Feedback Controller with the \alert{-a} parameter
+            pointing to the directory containing the \alert{feedbacks.list}
+            file
+            \begin{lstlisting}
+./FeedbackController.py -a /tmp/foo/
+            \end{lstlisting}
+    \end{enumerate}
 \end{frame}
 
 \begin{frame}{Ressources}
